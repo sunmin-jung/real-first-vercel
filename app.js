@@ -4,7 +4,7 @@ document.getElementById('btn').addEventListener('click', () => {
   const prompt = document.getElementById('q').value
 
   // 내 서버(프록시) 창구로 요청 (키 없음)
-  fetch('http://localhost:3000/api/chat', {
+  fetch('/api/chat', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ prompt })
