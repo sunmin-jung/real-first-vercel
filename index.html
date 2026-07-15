@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>AI에게 물어보기</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f4f0ff;
+      font-family: 'Malgun Gothic', sans-serif;
+    }
+
+    .box {
+      background: white;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
+
+    input, button {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      margin-top: 8px;
+      border-radius: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #8b5cf6;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #7c3aed;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <!-- 질문 입력칸 -->
+    <input id="q" placeholder="물어보기" />
+    <!-- 누르면 서버로 보냄 -->
+    <button id="btn">보내기</button>
+    <!-- 답이 표시될 자리 -->
+    <p>AI 응답: <b id="ans">…</b></p>
+  </div>
+
+  <!-- 동작(JS)은 app.js 로 분리해 불러오기 -->
+  <script src="app.js"></script>
+</body>
+</html>
